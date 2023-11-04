@@ -1,0 +1,125 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper {
+    background: url("./IMG/img12.png") 50%/cover no-repeat scroll;/*скрол можно и не писать но пусть будет видно что самый большой фон прокручивается*/
+}
+
+.container {
+    margin: 0px auto;/* у контейнера не будет отсупа сверху/снизу
+    а по бокам будет автоматические отсупы*/
+    max-width: 1200px;
+    background: url("./IMG/img9.png") 50%/cover no-repeat fixed; /*так будет прокручиваться содержимое без фона(он будет статичен)*/
+    color: rgb(245, 150, 7);
+    text-align: center;
+}
+
+.container h1,h3{
+    margin: 30px auto;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.479);
+    text-transform: uppercase;/* считай везде капслук у текста*/
+    letter-spacing: 3px;/* расстояние между буквами*/
+}
+.container h1{
+    margin: 0 auto ;
+}
+
+.photo {
+    margin: 10px auto;
+    max-width: 600px;
+    height: 400px;
+    background: url("./IMG/img3.png")  no-repeat /*no repeat чтобы картинка не повторялась*/
+    50%/cover /*ковер масштабирует изображение с сохранением пропорций
+    так дабы ширина и восота равнялась высоте блока а 50% распологают изображене 
+    по центру этого контейнера*/ ;
+    border: 8px solid white;
+}
+.provodnick{
+    margin: 30px auto;
+    max-width: 800px;
+    display: flex;/**/
+    justify-content: center;/**/
+     flex-wrap: nowrap;/*запрет переноса блока на друкую строку(мы тут его разрешаем)*/
+}
+
+
+
+.provodnick_photo{
+    margin: 0 10px 0 0;
+    width: 400px;
+    height: 300px;
+    background: url(./IMG/img5.png) no-repeat 50%/cover;
+}
+
+.provodnick_text{
+    margin: 0 0 0 0;
+    padding: 1rem;/*добавляемм отступы внутри */
+    text-align: left;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.provodnick_text p{/*тут я убрал встроеные отступы параграфа
+    которые изначально встроены в него*/
+    margin: 0;
+}
+
+.look{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.look_photo1{
+    margin: 10px 10px 10px 10px;
+    width: 350px;
+    height: 250px;
+    background: url("./IMG/img2.png") 50%/cover no-repeat;
+}
+.look_photo2{
+    margin: 10px 10px 10px 10px;
+    width: 350px;
+    height: 250px;
+    background: url("./IMG/img4.png") 50%/cover no-repeat;
+}
+
+.look_photo3{
+    margin: 10px 10px 10px 10px;
+    width: 350px;
+    height: 250px;
+    background: url("./IMG/img6.png") 50%/cover no-repeat;
+}
+
+.look_photo4{
+    margin: 10px 10px 10px 10px;
+    width: 350px;
+    height: 250px;
+    background: url("./IMG/img7.png") 50%/cover no-repeat;
+}
+
+.look_photo5{
+    margin: 10px 10px 10px 10px;
+    width: 350px;
+    height: 250px;
+    background: url("./IMG/img8.png") 50%/cover no-repeat;
+}
+#button{
+    margin: 0 auto;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.772);
+    border: 2px solid white;
+}
+
+#button:hover{/*ховер позволяет редактировать свойства пр  наведении курсора на него*/
+cursor: pointer;
+
+}
