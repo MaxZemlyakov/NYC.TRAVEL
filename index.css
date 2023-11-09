@@ -1,4 +1,4 @@
-* {box-sizing: border-box;}
+
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+    padding-top: 15px;
     margin: 0px auto;/* у контейнера не будет отсупа сверху/снизу
     а по бокам будет автоматические отсупы*/
     max-width: 1200px;
@@ -28,6 +29,21 @@ body {
 }
 .container h1{
     margin: 0 auto ;
+}
+
+.solid{
+    width: 1200px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.591);
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -80px;
+    transition: top 1s ease;
+    text-align: center;
+}
+
+.solid:hover{
+    top: 0px;
 }
 
 .photo {
@@ -110,16 +126,21 @@ body {
     background: url("./IMG/img8.png") 50%/cover no-repeat;
 }
 #button{
-    margin: 0 auto;
+    margin: 20px 0px 50px 0px;
     width: 200px;
     height: 35px;
     line-height: 35px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.772);
-    border: 2px solid white;
+    background-color: rgba(3, 3, 3, 0.699);
+    border: 2px solid rgb(245, 150, 7);
 }
 
 #button:hover{/*ховер позволяет редактировать свойства пр  наведении курсора на него*/
-cursor: pointer;
+    cursor: pointer
+}
 
+.footer{
+    margin: 0px auto;
+    height: 50px;
+    background-color: black;
 }
